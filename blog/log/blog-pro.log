@@ -1,0 +1,14 @@
+2021-06-25 09:54:35.198  INFO 13772 --- [main] com.lyx.blog.BlogApplicationTests        : Starting BlogApplicationTests using Java 1.8.0_291 on DESKTOP-5IN57OV with PID 13772 (started by dell in E:\code\blog)
+2021-06-25 09:54:35.205  INFO 13772 --- [main] com.lyx.blog.BlogApplicationTests        : The following profiles are active: pro
+2021-06-25 09:54:38.805  INFO 11296 --- [restartedMain] com.lyx.BlogApplication                  : Starting BlogApplication using Java 15.0.1 on DESKTOP-5IN57OV with PID 11296 (E:\code\blog\target\classes started by dell in E:\code\blog)
+2021-06-25 09:54:38.807  INFO 11296 --- [restartedMain] com.lyx.BlogApplication                  : The following profiles are active: pro
+2021-06-25 09:54:44.075  WARN 11296 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-25 09:54:44.902  WARN 13772 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-25 09:54:45.373  INFO 11296 --- [restartedMain] com.lyx.BlogApplication                  : Started BlogApplication in 7.037 seconds (JVM running for 8.565)
+2021-06-25 09:54:46.052  INFO 13772 --- [main] com.lyx.blog.BlogApplicationTests        : Started BlogApplicationTests in 11.352 seconds (JVM running for 12.558)
+2021-06-25 09:55:50.722  INFO 11296 --- [http-nio-80-exec-1] com.lyx.aspect.LogAspect                 : Request : {":{"url":"/","ip":"0:0:0:0:0:0:0:1","classMethod":"com.lyx.web.IndexController.index","args":[Page request [number: 0, size 8, sort: id: DESC], {}]}}
+2021-06-25 09:55:51.020  WARN 11296 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-25 09:55:51.173  WARN 11296 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-25 09:55:51.219  INFO 11296 --- [http-nio-80-exec-1] com.lyx.aspect.LogAspect                 : Result : {}index
+2021-06-25 09:55:52.576  INFO 11296 --- [http-nio-80-exec-3] com.lyx.aspect.LogAspect                 : Request : {":{"url":"/footer/newblog","ip":"0:0:0:0:0:0:0:1","classMethod":"com.lyx.web.IndexController.newBlogs","args":[{}]}}
+2021-06-25 09:55:52.582  INFO 11296 --- [http-nio-80-exec-3] com.lyx.aspect.LogAspect                 : Result : {}_fragments :: newblogList

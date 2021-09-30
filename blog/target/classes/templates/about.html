@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+	<head th:replace="_fragments :: head(~{::title})">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devic-width, initial-scale=1.0" />
+		<title>关于我</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+		<link rel="stylesheet" href="../static/css/me.css" th:href="@{css/me.css}" />
+	</head>
+	<body>
+		<!-- 导航 -->
+		<nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+			<div class="ui container">
+				<div class="ui inverted secondary stackable menu">
+					<h2 class="ui teal header m-blog">Liyuxi</h2>
+					<a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+					<a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+					<a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+					<a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+					<a href="#" class="active m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+					<div class="m-item right item m-mobile-hide">
+						<div class="ui icon inverted transparent input">
+							<input type="text" placeholder="Search....." />
+							<i class="search link icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+				<i class="sidebar icon"></i>
+			</a>
+		</nav>
+		<!-- 中间内容 -->
+		<div class="m-container m-padded-tb-large" style="animation-name:fadeIn; animation-duration: 3s;">
+			<div class="ui container">
+				<div class="ui stackable grid">
+					<!-- 左边 -->
+					<div class="eleven wide column">
+						<div class="ui segment">
+							<img class="ui rounded image" src="http://unsplash.it/800/600?image=1005" />
+						</div>
+					</div>
+					<!-- 右边 -->
+					<div class="five wide column">
+						<div class="ui top attached segment">
+							<div class="ui header">关于我</div>
+						</div>
+						<div class="ui attached segment">
+							<p class="m-text-thin">李禹锡，一个独立开发者，折腾在0和1世界的小朋友；一个终身学习者，将学习无限循环，希望结识可以共同成长的小伙伴。</p>
+							<p class="m-text-thin">热爱编程，喜欢折腾，正在探索高效学习编程技术的方法...</p>
+						</div>
+						<div class="ui attached segment">
+							<div class="ui basic orange left pointing label">编程</div>
+							<div class="ui basic orange left pointing label">听歌</div>
+							<div class="ui basic orange left pointing label">电影</div>
+							<div class="ui basic orange left pointing label">运动</div>
+						</div>
+						<div class="ui attached segment">
+							<div class="ui basic teal left pointing label m-margin-tb-tiny">Java</div>
+							<div class="ui basic teal left pointing label m-margin-tb-tiny">Spring</div>
+							<div class="ui basic teal left pointing label m-margin-tb-tiny">SpringBoot</div>
+							<div class="ui basic teal left pointing label m-margin-tb-tiny">Mybatis</div>
+							<div class="ui basic teal left pointing label m-margin-tb-tiny">MySQL</div>
+							<div class="ui basic teal left pointing label m-margin-tb-tiny">...</div>
+						</div>
+						<div class="ui bottom attached segment">
+							<a class="ui circular icon button" href="#"><i class="github icon"></i></a>
+							<a class="ui wechat circular icon button" href="#"><i class="weixin icon"></i></a>
+							<a class="ui qq circular icon button" data-content="2328181539" data-position="bottom center" href="#"><i class="qq icon"></i></a>
+						</div>
+						<div class="ui wechat-qr flowing popup transition hidden">
+							<img class="ui rounded image" alt="" src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" style="width: 110px;" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+			<div class="ui center aligned container">
+				<div class="ui inverted divided stackable grid">
+					<div class="three wide column">
+						<div class="ui inverted link list">
+							<div class="item">
+								<img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded image" alt="" style="width: 110px;"/>
+							</div>
+						</div>
+						
+					</div>
+					<div class="three wide column">
+						<h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">用户故事</a>
+							<a href="#" class="item">用户故事</a>
+							<a href="#" class="item">用户故事</a>
+						</div>
+					</div>
+					<div class="three wide column">
+						<h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Email:2328181539@qq.com</a>
+							<a href="#" class="item">QQ:2328181539</a>
+						</div>
+					</div>
+					<div class="seven wide column">
+						<h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4>
+						<p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于变成、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+					</div>
+				</div>
+				<div class="ui inverted section divider"></div>
+				<p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright©2021-2022Liyuxi Designed by Liyuxi</p>
+			</div>
+		</footer>
+		<!--在html中注释掉shymeleaf 引用模板中的js-->
+		<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+		<!-- cdn -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+		<!-- 本地 -->
+		<script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+		<script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+		<script src="../static/lib/tocbot/tocbot.js" th:src="@{/lib/tocbot/tocbot.js}"></script>
+		<script src="../static/lib/waypoint/jquery.waypoints.min.js" th:src="@{/lib/waypoint/jquery.waypoints.min.js}" ></script>
+		<!--/*/</th:block>/*/-->
+		<script>
+			$('.menu.toggle').click(function(){
+				$('.m-item').toggleClass('m-mobile-hide');
+			});
+			$('.qq').popup();
+			$('.wechat').popup({
+				popup : $('.wechat-qr'),
+				position : 'bottom center'
+			});
+		</script>
+	</body>
+</html>
